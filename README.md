@@ -12,6 +12,10 @@ The goal is to simplify and automate the process of creating color palettes for 
 
 The system creates color palettes that start as basic design ideas. These ideas can then be adjusted to meet the specific needs and tastes of a particular project and its audience. The goal is for this system to encourage designers and developers to make digital experiences that look good and are easy to use for everyone.
 
+## Demo
+
+A live demo of the project can be found [here](https://color-palette-generation-using-natural-algorithms-px19u0mpg.vercel.app/).
+
 ## Methodology
 
 ### Color Palette Definition and Optimization
