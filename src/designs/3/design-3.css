@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,400|SF+Pro Display:200");
+
+/* ANIMA screen - design3 */
+.font-class-1 {
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --auto-palette-color-1: <maintextcolor>;
+  --auto-palette-color-2: <buttontextcolor>;
+}
+.design3 .anna-35653c9e-ab35-4910-ac39-5d5b6e7b440f-Yi1YmB {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-size: 10px;
+  height: auto;
+  left: 293px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 280px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3 .ellipse-10-bf293380-7039-46f8-9aed-5563b2a05429-hhn4Pi {
+  background-color: rgba(255, 255, 255, 0);
+  flex-shrink: 0;
+  height: 43px;
+  position: relative;
+  width: 43px;
+}
+.design3 .mask-group-2-476eb508-d9cb-4fc0-be7d-7c0c5204c28a-tUzLaq {
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 43px;
+  justify-content: flex-start;
+  left: 330px;
+  position: absolute;
+  top: 294px;
+  width: auto;
+}
+.design3 .ellipse-11-8310723f-f9a1-48d8-8d19-4edd077589e4-CwJNvS {
+  background-color: rgba(255, 255, 255, 0);
+  flex-shrink: 0;
+  height: 43px;
+  position: relative;
+  width: 43px;
+}
+.design3 .rectangle-22-3bfad77e-2e13-4cfa-951d-a8ae7e227a00-2xiSn4 {
+  background-color: <backgroundcolor>;
+  height: 508px;
+  left: 0px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(0deg);
+  width: 414px;
+}
+.design3 .rectangle-15-24d3e582-57cf-440b-9eff-4f9c44d9c16d-x1pnWW {
+  background-color: <surfacecolor>;
+  height: 438px;
+  left: 27px;
+  position: absolute;
+  top: 36px;
+  transform: rotate(0deg);
+  width: 360px;
+}
+.design3 .rectangle-12-fcba7590-fad7-4796-a20e-5ff2a473cb9a-5Obp4F {
+  background-color: <primarycolor>;
+  border-radius: 5px;
+  height: 71px;
+  left: 61px;
+  position: absolute;
+  top: 76px;
+  transform: rotate(0deg);
+  width: 259px;
+}
+.design3 .anna-ccaba32f-f56b-4984-b66b-1727ccf8f0ff-L3y36H {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-size: 10px;
+  height: auto;
+  left: 293px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 61px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3
+  .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-2dc8aea4-4c03-4cf4-afda-a04893aa3dac-lWhCXt {
+  background-color: rgba(0, 255, 93, 0);
+  color: var(--auto-palette-color-2);
+  font-size: 12px;
+  height: 48px;
+  left: 77px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 89px;
+  transform: rotate(0deg);
+  width: 232px;
+}
+.design3 .a18-12-2caf8878-29b7-462f-a6ac-9195b58e3209-Z9lFEs {
+  background-color: rgba(0, 255, 93, 0);
+  color: var(--auto-palette-color-2);
+  font-size: 10px;
+  height: auto;
+  left: 285px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 130px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3 .rectangle-14-4bac8d1c-6e53-4b57-8bdc-adeedf95c40f-5NRWqO {
+  background-color: <surfacecolor>;
+  border-radius: 5px;
+  border-style: solid;
+  height: 71px;
+  left: 100px;
+  position: absolute;
+  top: 184px;
+  transform: rotate(0deg);
+  width: 259px;
+}
+.design3
+  .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-d14fbfc6-6539-411f-9dee-03c28ce4df9b-yNxqgH {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-size: 12px;
+  height: 48px;
+  left: 115px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 197px;
+  transform: rotate(0deg);
+  width: 232px;
+}
+.design3 .a18-14-f40d60ec-d88f-464a-bbae-cdc4f148f129-7Ai91s {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-size: 10px;
+  height: auto;
+  left: 330px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 239px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3 .ellipse-9-efc065d8-08cc-4af7-a730-41125bec6283-xDAY6G {
+  background-color: rgba(255, 255, 255, 0);
+  height: 43px;
+  left: 42px;
+  position: absolute;
+  top: 184px;
+  width: 43px;
+}
+.design3 .rick-827be4e7-5703-41d2-ada6-7292e0971b34-TDIHzO {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-size: 10px;
+  height: auto;
+  left: 100px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 171px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3 .rectangle-19-716797bb-82f2-42e4-8c9d-97436f33ecd3-GTs7so {
+  background-color: <primarycolor>;
+  border-radius: 5px;
+  height: 147px;
+  left: 61px;
+  position: absolute;
+  top: 294px;
+  transform: rotate(0deg);
+  width: 259px;
+}
+.design3
+  .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-justo-duo-dolores-et-ea-rebum-stet-clita-kasd-gubergren-no-sea-takimata-d899af39-3572-4680-a04c-c4a5d64935e0-Ul3RvB {
+  background-color: rgba(0, 255, 93, 0);
+  color: var(--auto-palette-color-2);
+  font-size: 12px;
+  height: 118px;
+  left: 77px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 307px;
+  transform: rotate(0deg);
+  width: 228px;
+}
+.design3 .a18-12-4ca42922-1aa2-4b92-9026-60ad1df06f07-RE2S2U {
+  background-color: rgba(0, 255, 93, 0);
+  color: var(--auto-palette-color-2);
+  font-size: 10px;
+  height: auto;
+  left: 285px;
+  line-height: 10px;
+  position: absolute;
+  text-align: left;
+  top: 424px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design3 {
+  background-color: rgba(255, 255, 255, 0);
+  height: 509px;
+  overflow: hidden;
+  position: relative;
+  width: 414px;
+}
+.design3 .mask-group-1-0eb1d52e-ba7e-45c3-b689-84fce5cf7296-aziY8P {
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 43px;
+  justify-content: flex-start;
+  left: 330px;
+  position: absolute;
+  top: 76px;
+  width: auto;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity: 0;
+  display: block;
+  animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity: 1;
+  display: block;
+  animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay: 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events: none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events: auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility: hidden;
+  pointer-events: none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility: hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor: pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration: none;
+}
+.anima-flexbox-container a {
+  line-height: 0;
+}
+.anima-full-width-a {
+  width: 100%;
+}
+.anima-full-height-a {
+  height: 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline: none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.anima-container-center-vertical {
+  align-items: center;
+  height: 100%;
+}
+.anima-container-center-horizontal {
+  justify-content: center;
+  width: 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+}

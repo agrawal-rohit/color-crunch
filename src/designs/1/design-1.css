@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,400|SF+Pro Display:200");
+
+/* ANIMA screen - design1 */
+:root {
+  --auto-palette-color-1: <maintextcolor>;
+}
+.design1
+  .at-vero-eos-et-accusam-et-justo-duo-dolores-et-ea-rebum-stet-clita-kasd-gubergren-no-sea-takimata-sanctus-est-lorem-ipsum-dolor-sit-amet-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-00ede9c5-63fe-477b-b842-be4991e0c75d-J8PQlZ {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-family: "Montserrat", Helvetica, Arial, serif;
+  font-size: 13px;
+  height: 140px;
+  left: 58px;
+  letter-spacing: 0px;
+  line-height: 13px;
+  position: absolute;
+  text-align: left;
+  top: 152px;
+  transform: rotate(0deg);
+  width: 300px;
+}
+.design1 .span0-J8PQlZ {
+  color: <maintextcolor>;
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.design1 .span1-J8PQlZ {
+  color: <maintextcolor>;
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.design1 .span2-J8PQlZ {
+  color: <maintextcolor>;
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.design1 .sub-heading-1-78817dbb-6037-46db-9a9d-21ce9336c752-TslZc4 {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-family: SF Pro Display, Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 200;
+  height: 14px;
+  left: 59px;
+  letter-spacing: 0px;
+  line-height: 16px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: 116px;
+  transform: rotate(0deg);
+  width: 305px;
+}
+.design1
+  .this-is-my-quote-but-don-t-quote-me-on-it-a5899971-1119-47ff-8282-ba384900ceea-pCdX8C {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  height: 53px;
+  left: 79px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  position: absolute;
+  text-align: left;
+  top: 305px;
+  transform: rotate(0deg);
+  width: 285px;
+}
+.design1 .rectangle-16-16b739b0-bfea-429d-bb0d-86c0ef157c52-qFm7IZ {
+  background-color: <accentcolor>;
+  height: 63px;
+  left: 58px;
+  position: absolute;
+  top: 305px;
+  transform: rotate(0deg);
+  width: 2px;
+}
+.design1 .rohit-agrawal-43af3d2c-116b-4144-95ab-b0c5310c754b-O2qZpR {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-family: SF Pro Display, Helvetica, Arial, serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+  height: 14px;
+  left: 79px;
+  letter-spacing: 0px;
+  line-height: 14px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: 356px;
+  transform: rotate(0deg);
+  width: 305px;
+}
+.design1 .rectangle-23-0d70aa62-4bba-445f-b11b-0d8cf496250a-SazTEB {
+  background-color: <primarycolor>;
+  border-radius: 5px;
+  height: 44px;
+  left: 58px;
+  position: absolute;
+  top: 398px;
+  transform: rotate(0deg);
+  width: 299px;
+}
+.design1 .learn-more-86ab24c2-e85c-45bd-bf89-26f3915967d1-mZj3ov {
+  background-color: rgba(0, 255, 93, 0);
+  color: <buttontextcolor>;
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 174px;
+  letter-spacing: 0px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 414px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design1 .heading-1-27a9081b-85d2-41a0-991e-ab59acb15121-mxSMA6 {
+  background-color: <maintextcolor>;
+  color: var(--auto-palette-color-1);
+  font-family: Montserrat, Helvetica, Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 60px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  position: absolute;
+  text-align: left;
+  top: 70px;
+  transform: rotate(0deg);
+  width: auto;
+}
+.design1 .rectangle-20-cae4059f-a14f-4b95-949a-968fa3d38346-dlxBTZ {
+  background-color: <backgroundcolor>;
+  height: 508px;
+  left: 0px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(0deg);
+  width: 414px;
+}
+.design1 .rectangle-15-156308b6-e1fa-49de-9ce1-7de363dc99b0-9gSn13 {
+  background-color: <surfacecolor>;
+  height: 438px;
+  left: 27px;
+  position: absolute;
+  top: 36px;
+  transform: rotate(0deg);
+  width: 360px;
+}
+.design1 .line-2-375244f9-64da-47dd-bb74-decd22036f26-8x7Ypm {
+  background-color: <maintextcolor>;
+  height: 2px;
+  left: 60px;
+  position: absolute;
+  top: 105px;
+  width: 297px;
+}
+.design1 {
+  background-color: rgba(255, 255, 255, 0);
+  height: 509px;
+  overflow: hidden;
+  position: relative;
+  width: 414px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity: 0;
+  display: block;
+  animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity: 1;
+  display: block;
+  animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay: 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events: none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events: auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility: hidden;
+  pointer-events: none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility: hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor: pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration: none;
+}
+.anima-flexbox-container a {
+  line-height: 0;
+}
+.anima-full-width-a {
+  width: 100%;
+}
+.anima-full-height-a {
+  height: 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline: none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.anima-container-center-vertical {
+  align-items: center;
+  height: 100%;
+}
+.anima-container-center-horizontal {
+  justify-content: center;
+  width: 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+}

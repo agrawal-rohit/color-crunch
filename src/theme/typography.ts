@@ -1,0 +1,38 @@
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+  fonts: {
+    body: "Inter, sans-serif",
+    heading: "Inter, sans-serif",
+    mono: "Inter, sans-serif",
+  },
+  fontSizes: {
+    "3xs": "0.6rem",
+    "2xs": "0.66rem",
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "2rem",
+    "4xl": "2.25rem",
+    "5xl": "2.5rem",
+  },
+  lineHeights: {
+    normal: "normal",
+    none: 1,
+    shorter: 1.25,
+    short: 1.375,
+    base: 1.5,
+    tall: 1.625,
+    taller: "2",
+    "3": ".875rem",
+    "4": "1rem",
+    "5": "1.25rem",
+    "6": "1.5rem",
+    "7": "1.75rem",
+    "8": "2rem",
+    "9": "2.25rem",
+    "10": "2.5rem",
+  },
+};

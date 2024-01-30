@@ -1,0 +1,409 @@
+Generating color palettes for user interface design
+using Nature Inspired Algorithms
+
+
+Abstract—User interface design is an integral part of any
+software development process since it can dramatically affect the
+usability and user experience of the application. The chosen color
+palette for any design can make-or-break an application since it
+heavily affects the visual aesthetic, thus it can be one of the most
+time-consuming stages of any UI design process. In this work, we
+have proposed the use of natural algorithms to generate an entire
+color palette to complement any user-defined color. We define
+a novel objective function using the Web Content Accessibility
+Guidelines (WCAG) 2.0 color contrast standards to generate
+and evaluate the color palettes. We implement and compare
+popular local and global search meta-heuristic approaches such
+as Hill Climbing, Simulated Annealing, and Genetic Algorithms
+on the proposed objective function. Our experiments showed that
+Genetic algorithms have the potential to generate diverse and
+visually aesthetic color palettes in a reasonable amount of time.
+
+
+I. INTRODUCTION
+A user interface (UI) generally refers to the visual layout
+of the elements which the user interacts with when browsing
+any website or software application. It is an integral part of
+any software development process since it can dramatically
+affect the usability and user experience of the application. UI
+designs must not only be attractive to potential users but must
+also be functional and created with users in mind. If a user
+interface is too complex or not adapted to targeted users, the
+user may not be able to find the information or service they are
+looking for. In website design, this can affect conversion rates.
+The layout of a user interface design should also be carefully
+constructed so that elements can be found in a logical position
+by the users.
+A good UI design should make the application a delight
+to use resulting in easily visible call-to-actions (CTAs), an
+good flow towards desirable pages, and retaining (or even
+enhancing) the brand identity of the organization. This can
+be achieved through breathable layouts, text boxes following
+a structured hierarchy, and a suitable color palette. The chosen
+color palette can make-or-break an application since it heavily
+affects the visual aesthetic. A poorly chosen color palette may
+lead to the following situations: (i) makes it harder for the
+users to find CTAs, (ii) makes it harder for users to focus on
+imperative information, (iii) makes the application unpleasant
+to look at, and (iv) makes it harder to understand the written
+text. A few samples of bad UI designs are shown in Fig. 1.
+
+Color choice can be one of the most time-consuming stages
+of any UI design process, resulting in experienced designers
+spending hours to pick up the right color palette. This occurs
+due to the many constraints imposed on the colors that are
+allowed to be used. One of these constraints is to choose colors
+that complement the colors of the particular brand, which
+are generally pre-decided during the UI design stage. Many
+brands choose specific colors for establishing their identity in
+the marketplace, and it is imperative to reflect that identity on
+any of its applications. Another constraint occurs due to color
+psychology [1], which is a branch of psychology showing
+the influence of colors on human mood and behavior. Each
+color has an influence on our mind and the knowledge of
+the possible effects can help designers to transfer the right
+message and direct users to act desirably.
+Natural algorithms, also called nature-inspired algorithms
+(NIAs) are a family of methods that include taking inspiration
+from nature for the development of novel problem-solving
+techniques. Over the past few decades, various NIAs have
+been developed, taking inspiration from the biological swarms
+[2]–[5], natural evolution [6]–[8], physical, chemical, and
+geographic processes [9] that occur in nature. With the widespread applications of artificial neural networks [10], hybrid
+approaches such as NEAT (NeuroEvolution of Augmenting
+Topologies) [11] combining neural networks and natural algorithms are achieving great results.
+In this work, we use some of the above-mentioned methodologies to generate diverse color palettes for UI designs. Our
+system takes a user-defined color as input, which can be
+thought of as the pre-defined brand color, and generates a
+color palette to complement that particular color. We define a
+novel objective function to compute and evaluate the solutions
+by optimizing color contrast ratios to meet baseline web
+accessibility standards. We compare different meta-heuristic
+approaches using local search - Hill Climbing and Simulated
+Annealing, and global search - Genetic Algorithms, for the
+problem at hand.
+II. P ROPOSED W ORK
+The proposed methodology is divided into the following
+subsections: (i) Format of the Color Palette and Encoding
+Strategy (ii) Defining the objective function, (iii) Local search
+meta-heuristics using Hill Climbing and Simulated Annealing,
+(iv) Global search meta-heuristics using Genetic Algorithms.
+ 
+A. Format of the Color Palette and Encoding Strategy
+
+encoding strategy to represent a color palette mathematically,
+where the 5 colors we seek to compute are represented as a
+vector of length 15 called X. Each element in the vector can
+have a value between 50 and 255 since each value of R,G,B
+is stored as an 8bit value containing values between 0 and
+255. We increase the lower bound of values to 50 because the
+colors having values below 50 are deemed to be too dark and
+are generally not preferred in modern UI design practices.
+B. Defining the Objective Function
+
+Fig. 2: Different colors in the palette while inserted in a design
+We define a color palette as a collection of the following 6
+types of colors:
+1) Primary Color (PC): Pre-defined by a user, around
+which the rest of the 5 colors are picked. This can be
+thought of as the brand color and is applied to buttons
+(which acts as CTAs)
+2) Accent Color (AC): Additional color used to add some
+variety to the primary color. It can be a different shade
+of the primary color, or a different color altogether. This
+color is applied to buttons and other decorative elements.
+3) Background Color (BC): Color the background of the
+design.
+4) Surface Color (SC): Color of the background of any
+subsection in the design.
+5) Button Text Color (BTC): Color of the text within a
+button.
+6) Main Text Color (MTC): Color of the main text content
+that is present in the design
+Out of the 6 colors, we assume the primary color as input
+to the algorithm and optimize the other 5 colors with the help
+of the objective function discussed below. We use a value
+
+Color contrast is a key part of any visual composition. It
+brings the individuality for each UI element and makes all
+of them noticeable. User interfaces containing only shades
+from the same color family have fewer chances to draw users’
+attention. Therefore, any good UI design has to meet a base
+level of color contrast among its various elements to draw
+the users’ attention on them effectively. A high level of color
+contrast may not always work well too, because if the text
+content and the background colors contrast each other too
+much, it will be difficult to read or scan the text. Therefore,
+it is desirable to choose a color palette that creates a mild
+level of contrast and apply high contrasting colors only for
+highlighting elements. For the sRGB colorspace, the relative
+luminance of a color is defined in eq. 1.
+L = 0.2126 ∗ R + 0.7152 ∗ G + 0.0722 ∗ B
+
+(1)
+
+where, R, G and B are defined as:
+(
+R=
+(
+G=
+(
+B=
+
+RsRGB
+12.92 ,
+(RsRGB+0.055) 2.4
+,
+1.055
+GsRGB
+12.92 ,
+(GsRGB+0.055) 2.4
+,
+1.055
+BsRGB
+12.92 ,
+(BsRGB+0.055) 2.4
+,
+1.055
+
+if RsRGB ≤ 0.03928
+otherwise
+if GsRGB ≤ 0.03928
+otherwise
+if BsRGB ≤ 0.03928
+otherwise
+
+The color contrast ratio can mathematically be defined as the
+difference in relative luminance between two adjacent colors
+or overlaid colors (foreground/background) as given in eq. 2.
+R(C1 , C2 ) =
+
+L1 + 0.05
+L2 + 0.05
+
+(2)
+
+where C1 and C2 are two colors, L1 is the relative luminance of the lighter of the colors, and L2 is the relative luminance of the darker of the colors. R exists between the range
+of [1, 21], with 1 corresponding to the contrast ratio of the
+same colors (L1 = L2 ), and 21 corresponding to the contrast
+ratio of black (RGB(0,0,0)) and white (RGB(255,255,255)).
+The Web Content Accessibility Guidelines (WCAG) 2.0
+[12] defines the following guidelines for accessible web content and associated contrast ratios:
+• Minimum Contrast Standards
+– Level AA: A contrast ratio of greater than 4.5 is
+required for normal-sized text.
+– Level AALarge: A contrast ratio of greater than 3
+is required for large text.
+• Enhanced Contrast Standards
+– Level AAA: A contrast ratio of greater than 7 is
+required for normal-sized text.
+– Level AAALarge: A contrast ratio of greater than
+4.5 is required for large text.
+Taking these guidelines into consideration, we define the
+following rules to calculate the fitness of a color palette:
+1) The SC color would act as the background for PC
+and AC colors individually since they correspond to
+the value of the CTA buttons, therefore a decent level
+of contrast is required the color pairs (SC, PC) and
+(SC, AC). A discretized approach is followed to avoid
+penalizing for minute differences in contrast values for
+different colors. This ensures a level of diversity in
+possible colors while adhering to the WCAG guidelines.
+(Note: the BC value is not considered for the fitness
+evaluation since it is quite independent of the content
+in the chosen designs. Values of BC containing low and
+high contrast values with SC does not interfere with the
+clarity of the main content, and thus are all acceptable.)
+
+
+if R(P C, SC) > 7
+7,
+fP C,SC = 4.5, if 7 >= R(P C, SC) > 4.5
+
+
+0,
+otherwise
+
+
+if R(AC, SC) > 7
+7,
+fAC,SC = 4.5, if 7 >= R(AC, SC) > 4.5
+
+
+0,
+otherwise
+2) Similarly, the (PC, AC) color pair follows a discretized
+approach to award diverse solutions following a base
+level of contrast equally. The step is performed to
+prevent the AC to be very similar to PC and thus include
+color variety.
+
+7,
+
+
+
+4.5,
+fAC,P C =
+
+3,
+
+
+
+0,
+
+if R(AC, P C) > 7
+if 7 >= R(AC, P C) > 4.5
+if 4.5 >= R(AC, P C) > 3
+otherwise
+
+3) To maximize clarity of text contents, we directly use
+the contrast values on the text and its background as
+the fitness function. In doing so, the system would be
+incentivized into maintaining a high contrast between
+them. Another advantage of doing so is to include some
+smoothness in the fitness function, as opposed to the
+discrete fitness function discussed above. This helps
+prevent local search meta-heuristic methods to get stuck
+at a local optimum. The possible combinations of text
+colors and their respective backgrounds are (BTC, PC),
+(BTC, AC), and (MTC, SC), and their corresponding
+fitness functions are given in eq. 3.
+fP C,BT C = R(P C, BT C)
+fAC,BT C = R(AC, BT C)
+
+(3)
+
+fSC,M T C = R(SC, M T C)
+Finally, we obtain the global objective function, F , by
+adding up the above-mentioned fitness functions as described
+in eq. 4.
+F = fP C,SC + fAC,SC + fP C,AC + fP C,BT C
++fAC,BT C + fSC,M T C
+
+(4)
+
+C. Local search Meta-heuristics
+The Hill Climbing algorithm [13] is a popular meta-heuristic
+algorithm that randomly initializes a solution state, computes
+it’s neighbours, and moves to the neighbour state which has a
+higher objective value than the current solution. This process
+is repeated until no better neighbours are available. In this
+work, the neighbours are computed by adding and subtracting
+each value of X by 10 while adhering to the constraint that
+each value of X must exist between 50 and 255. The value
+10 is chosen to achieve faster convergence. The Simulated
+Annealing algorithm [9], has also been implemented since
+the Hill climbing does not guarantee finding global optimum
+solutions. While the Hill Climbing algorithm only allows
+moving towards solutions that are better than the current one,
+the Simulated Annealing algorithm allows the system to move
+towards potentially worse solutions with a probability that
+follows the Boltzmann distribution (as shown in eq. 5).
+
+
+|F (s) − F (t)|
+(5)
+exp −
+Temp
+where F is the global objective function, s is the current
+solution, t is a neighbour solution of s, and T emp is a temperature value which ’anneals’ (cools) over time as monotonically
+decreasing function with a decay rate of 0.99. Once the value
+of T emp goes below 0.001, it continues as the original Hill
+Climbing algorithm.
+D. Global search Meta-heuristics
+The local search approaches discussed above are capable
+of producing only one solution which itself is prone to get
+stuck at a local optimum. Instead, it is desirable to generate
+
+Fig. 3: Sample designs created for testing the color palettes.
+
+multiple solutions to obtain diverse solutions that satisfy the
+baseline criteria of performance. Genetic Algorithms (GA) [7]
+are a way to achieve the same. GAs take inspiration from the
+evolution of species for survival through reproduction among
+the fittest individuals. We initialize a random population of 5
+solutions and pick the top two solutions as the parents using
+rank selection [14]. Rank selection ensures high population
+diversity, which is quite desirable for our problem because
+we wish to produce multiple color palettes for a design.
+The selected parents are chosen to produce 2 offspring using
+the shuffle crossover with a crossover probability(pc ) of 0.2.
+Shuffle Crossover helps in the creation of offspring which are
+independent of the crossover point in their parents [15]. A
+gene in the selected offspring can also undergo mutation with
+a mutation probability (pm ) of 0.0666 (=1/15) such that the
+gene’s value is replaced by a random integer between 50 and
+255. Having pm = 0.066 ensures that, on average, one gene
+in every offspring gets mutated. The generated offspring then
+replace the worst 2 individuals in the population. This process
+is repeated until all the solutions in our population achieve a
+fitness score above an arbitrary value (45, in this work).
+III. R ESULTS AND A NALYSIS
+To test how the generated color palette looks on actual
+designs, we create 3 sample designs using a vector-based user
+experience design tool called Adobe XD, as shown in Fig. 3.
+These designs follow good design practices of readable fonts
+and breathable layouts, however, a bad choice of the color
+palette could make them unpleasant. Therefore, they serve as
+optimal testbeds for our generated color palettes.
+The color RGB (116, 48, 241) has been considered as the
+Primary Color (PC) and used as an input to the algorithms
+discussed above. Table I shows the value of the objective
+fitness function for each algorithm after it has converged to a
+solution. It can be observed that the Hill Climbing algorithm
+converges in only 128 iterations, and achieves a decent fitness
+score in the process. However, the results of this algorithm
+are quite heavily dependent on the initial state, thus it may be
+unreliable at times. On the other hand, Simulated Annealing
+achieves a higher score since it overcomes the shortcomings
+of the Hill Climbing algorithm. However, it can be observed
+that it took the highest amount of time to converge, which
+
+could be attributed to the low chosen decay rate of T emp
+= 0.99. The genetic algorithm performed better than all the
+other algorithms by obtaining the highest fitness value and
+converging faster than the Simulated Annealing algorithm. The
+convergence plots for the implemented algorithms are shown
+in Fig. 4. It can be observed that the Hill Climbing algorithm
+had a very high rate of increase at first, but it then converged
+instantly due to being stuck at a local optimum. The Simulated
+Annealing algorithm had a very steady increase with small
+negative peaks which occurred due to moving to a worse
+solution state with a probability defined in eq. 5. The genetic
+algorithm had a very sharp increase until it reached the mean
+objective at 35, and then it increased very slowly. Mutation
+plays a very important role during this stage by helping the
+model explore alternate solutions that tend towards the global
+optima. The generated color palettes by each algorithm are
+shown in Fig. 5, Fig. 6, and Fig. 7 below.
+Algorithm
+Hill Climbing
+Simulated Annealing
+Genetic Algorithm
+
+Objective Fitness
+32.102
+38.873
+45.157
+
+No. of iterations for convergence
+128
+743
+454
+
+TABLE I: Comparison of algorithms after convergence
+
+IV. CONCLUSION
+In this work, we proposed the use of natural algorithms
+to generate color palettes for user interface design. A userdefined color has been used an input to the algorithms,
+ 
+which generate the rest of the colors in a color palette to
+complement the user-defined color. A novel objective function
+is defined by following the WCAG 2.0 color contrast standards
+which enable the algorithms to generate and evaluate color
+palettes. We implemented and compared popular local and
+global search meta-heuristic approaches such as Hill Climbing,
+Simulated Annealing, and Genetic Algorithms on the proposed
+objective function and it was observed that Genetic algorithms
+are able to create diverse and visually aesthetic color palettes
+in a reasonable number of iterations.
