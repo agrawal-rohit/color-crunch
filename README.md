@@ -2,6 +2,10 @@
 
 https://github.com/agrawal-rohit/pearl-ui/assets/29514438/0dc04e6a-2d84-4090-85f6-a551eb3632dd
 
+## Demo
+
+A live demo of the project can be found [here](https://color-palette-generation-using-natural-algorithms-px19u0mpg.vercel.app/).
+
 ## Introduction
 
 Choosing the right colors for a user interface (UI) can significantly impact the app's look and feel. This project explores a novel approach to generating color palettes using algorithms inspired by nature, such as **Hill Climbing**, **Simulated Annealing**, and **Genetic Algorithms**. These algorithms employ principles from nature to discover optimal color combinations that enhance UI design.
@@ -11,10 +15,6 @@ Choosing the right colors for a user interface (UI) can significantly impact the
 The goal is to simplify and automate the process of creating color palettes for UI design through the use of nature-inspired algorithms. By providing a base color, these algorithms can generate a palette that complements it. Importantly, the generated colors adhere to the [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/WAI/standards-guidelines/wcag/) color contrast standards, ensuring that the palettes are not only visually appealing but also practical for real-world applications.
 
 The system creates color palettes that start as basic design ideas. These ideas can then be adjusted to meet the specific needs and tastes of a particular project and its audience. The goal is for this system to encourage designers and developers to make digital experiences that look good and are easy to use for everyone.
-
-## Demo
-
-A live demo of the project can be found [here](https://color-palette-generation-using-natural-algorithms-px19u0mpg.vercel.app/).
 
 ## Methodology
 
