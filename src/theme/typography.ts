@@ -1,9 +1,9 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   fonts: {
-    body: "Geist, sans-serif",
-    heading: "Geist, sans-serif",
-    mono: "Geist, sans-serif",
+    body: "Inter, sans-serif",
+    heading: "Inter, sans-serif",
+    mono: "Inter, sans-serif",
   },
   fontSizes: {
     "3xs": "0.6rem",

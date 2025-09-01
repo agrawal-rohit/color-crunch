@@ -115,7 +115,7 @@ const IndexPage: React.FC = () => {
               Made with <chakra.b color="red">❤️</chakra.b> by{" "}
               <Link
                 isExternal
-                href="https://rohit.build"
+                href="https://github.com/agrawal-rohit"
                 fontWeight="medium"
                 color="primary.500"
                 transition="all 0.2s ease"
