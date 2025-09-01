@@ -6,7 +6,7 @@
 
 <br />
 
-![Demo](https://cdn.rohit.build/github-gifs%3Agenetic-crossover-demo.gif)
+![Demo](https://cdn.rohit.build/github-gifs%3Acolor-cruncher.gif)
 
 </div>
 
