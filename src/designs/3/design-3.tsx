@@ -131,10 +131,12 @@ const DesignThree: React.FC<DesignThreeProps> = ({ palette }) => {
       <img
         src={maskImage}
         className="mask-group-1-0eb1d52e-ba7e-45c3-b689-84fce5cf7296-aziY8P anima-flexbox-container"
+        alt="mask-group-1"
       />
       <img
         src={maskImage}
         className="mask-group-2-476eb508-d9cb-4fc0-be7d-7c0c5204c28a-tUzLaq anima-flexbox-container"
+        alt="mask-group-2"
       />
     </div>
   );
