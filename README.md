@@ -2,13 +2,13 @@
   
 ## Color Cruncher
 
-[Installation](#installation) • [Demo](https://github.com/agrawal-rohit/pearl-ui/assets/29514438/0dc04e6a-2d84-4090-85f6-a551eb3632dd) • [Algorithms](#algorithms) • [Contributing](#contributing) • [License](#license)
+[Installation](#installation) • [Demo](https://color-cruncher.rohit.build) • [Algorithms](#algorithms) • [Contributing](#contributing) • [License](#license)
 
 </div>
 
 <br />
 
-![Demo](https://cdn.rohit.build/work%3Acolor-cruncher%3Agenetic-crossover-demo.gif)
+![Demo](https://cdn.rohit.build/github-gifs%3Agenetic-crossover-demo.gif)
 
 **Color Cruncher** is a small experiment that asks:  
 what if we let nature-inspired algorithms pick our UI color palettes?
