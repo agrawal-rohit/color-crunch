@@ -84,7 +84,7 @@ const SimulatedAnnealing: React.FC = () => {
         left: "center",
         textStyle: {
           fontSize: 16,
-          fontFamily: "Inter",
+          fontFamily: "Geist",
           fontWeight: "bolder",
         },
       },
@@ -147,7 +147,7 @@ const SimulatedAnnealing: React.FC = () => {
         left: "center",
         textStyle: {
           fontSize: 16,
-          fontFamily: "Inter",
+          fontFamily: "Geist",
           fontWeight: "bolder",
         },
       },
