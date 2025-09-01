@@ -8,11 +8,13 @@
 
 <br />
 
-Color Cruncher is a small experiment that asks:  
+![Demo](https://cdn.rohit.build/work%3Acolor-cruncher%3Agenetic-crossover-demo.gif)
+
+**Color Cruncher** is a small experiment that asks:  
 what if we let nature-inspired algorithms pick our UI color palettes?
 
-You give it a base color → it crunches numbers, mutates a few generations, and spits out a palette that’s actually usable and passes accessibility checks.  
-No more “does this shade of blue look good with off-white #fefefe?” debates.
+You give it a base color → it crunches numbers, mutates a few generations, and spits out a palette that’s aesthetically pleasing and optimised for accessibility checks.  
+No more _“does this shade of blue look good with off-white #fefefe?”_ debates.
 
 ## Introduction
 
