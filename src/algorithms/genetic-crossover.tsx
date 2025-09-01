@@ -213,6 +213,9 @@ const GeneticCrossover: React.FC = () => {
   const performCrossoverAndMutation = (
     parents: Array<Array<number>>
   ): Array<Array<number>> => {
+    if (!parents || parents.length < 2 || !parents[0] || !parents[1])
+      throw new Error("Invalid parents array for crossover");
+
     let offspring1: Array<number> = [];
     let offspring2: Array<number> = [];
 
@@ -363,12 +366,16 @@ const GeneticCrossover: React.FC = () => {
   };
 
   const runSimulation = () => {
-    setPopulation(
-      Array.from({ length: populationSize }).map(() => seedInitialSolution())
+    const newPopulation = Array.from({ length: populationSize }).map(() =>
+      seedInitialSolution()
     );
-    setPopulationEvals(
-      population.map((solution) => evaluateSolution(primaryColorRGB, solution))
+    setPopulation(newPopulation);
+
+    const newPopulationEvals = newPopulation.map((solution) =>
+      evaluateSolution(primaryColorRGB, solution)
     );
+
+    setPopulationEvals(newPopulationEvals);
     setIsSimulationRunning(true);
     setHasSimulationRunBefore(true);
     setCurrentIteration(0);
