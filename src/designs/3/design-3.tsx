@@ -96,6 +96,7 @@ const DesignThree: React.FC<DesignThreeProps> = ({ palette }) => {
       <img
         src={ellipseImg}
         className="ellipse-9-efc065d8-08cc-4af7-a730-41125bec6283-xDAY6G"
+        alt="ellipse-9"
       />
       <div
         className="rick-827be4e7-5703-41d2-ada6-7292e0971b34-TDIHzO font-class-1"
