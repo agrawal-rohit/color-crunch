@@ -45,13 +45,13 @@ Basically: if a palette looks nice but fails accessibility, it gets thrown out.
 
 ## Installation
 
-Clone the repo and install dependencies:
+Clone the repo and install dependencies _(ensure you use [Yarn](https://yarnpkg.com/) as your package manager)_:
 
 ```bash
 git clone https://github.com/agrawal-rohit/color-cruncher
 cd color-cruncher
-npm install
-npm run start
+yarn install
+yarn start
 ```
 
 ## Contributing
