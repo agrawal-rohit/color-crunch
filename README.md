@@ -1,16 +1,16 @@
 <div align="center">
   
-## Color Cruncher
+## Color Crunch
 
-[Installation](#installation) • [Demo](https://color-cruncher.rohit.build) • [Algorithms](#algorithms) • [Contributing](#contributing) • [License](#license)
+[Installation](#installation) • [Demo](https://color-crunch.rohit.build) • [Algorithms](#algorithms) • [Contributing](#contributing) • [License](#license)
 
 <br />
 
-![Demo](https://cdn.rohit.build/github-gifs%3Acolor-cruncher.gif)
+![Demo](https://cdn.rohit.build/github-gifs%3Acolor-crunch.gif)
 
 </div>
 
-**Color Cruncher** is a small experiment that asks:  
+**Color Crunch** is a small experiment that asks:  
 what if we let nature-inspired algorithms pick our UI color palettes?
 
 You give it a base color → it crunches numbers, mutates a few generations, and spits out a palette that’s aesthetically pleasing and optimised for accessibility checks.  
@@ -48,8 +48,8 @@ Basically: if a palette looks nice but fails accessibility, it gets thrown out.
 Clone the repo and install dependencies _(ensure you use [Yarn](https://yarnpkg.com/) as your package manager)_:
 
 ```bash
-git clone https://github.com/agrawal-rohit/color-cruncher
-cd color-cruncher
+git clone https://github.com/agrawal-rohit/color-crunch
+cd color-crunch
 yarn install
 yarn start
 ```
