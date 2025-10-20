@@ -6,7 +6,7 @@
 
 <br />
 
-![Demo](https://cdn.rohit.build/github-gifs/color-crunch.gif)
+![Demo](https://cdn.rohit.build/oss/color-crunch/github-readme-preview.gif)
 
 </div>
 
